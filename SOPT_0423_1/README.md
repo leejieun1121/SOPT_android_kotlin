@@ -1,4 +1,4 @@
-첫번째 세미나과제 #2
+### 첫번째 세미나과제 #2 :green_book:
 
 회원가입 및 로그인 기능 구현하기
 
@@ -25,17 +25,18 @@ Login.Activity.kt
 
 (올린 파일에서는 MainActivity.kt이다ㅠ LoginActivity로 따로 뺐어야했는데 MainActivity에 그냥 작성해버렸다..ㅎ )
 
-
+~~~
 tv_join.setOnClickListener{
     val joinIntent = Intent(this,Join_Activity::class.java)
     startActivityForResult(joinIntent, 100)
 }
+~~~
 
 그리고 onActivityrResult메소드를 오버라이드해서 작업이 잘 이뤄졌고(requestCode == Activity.RESULT_OK) , 결과로 받은 requestCode와 startActivityForResult로 넘겨준 RequestCode값이 일치한다면 넘겨받은 값을 아이디와 패스워드에 보여주면 된다.
 
 LoginActivity.kt
 
-
+~~~
 override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
     super.onActivityResult(requestCode, resultCode, data)
     if(resultCode == Activity.RESULT_OK)
@@ -52,6 +53,7 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
         }
     }
 }
+~~~
 
 회원가입 액티비티로 넘어가면 회원가입할때 사용했던 아이디와 패스워드 값을 putExtra("name",value)로 넘겨준다. 그리고 setResult()로 requestCode와 넘겨줄 값을 넣은 intent 를 써준다.
 
