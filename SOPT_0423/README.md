@@ -1,4 +1,4 @@
-첫째주 세미나과제 #1
+### 첫째주 세미나과제 #1 :blue_book:
 
 ConstraintLayout 심화학습
 
