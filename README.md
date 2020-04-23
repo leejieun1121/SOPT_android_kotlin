@@ -1,5 +1,4 @@
 # SOPT_android_kotlin
-sopt_안드로이드파트
 
 #### SOPT의 첫 과제 !
 안드로이드 애뮬레이터 실행시켜보기였다
