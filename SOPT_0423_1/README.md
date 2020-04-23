@@ -15,13 +15,13 @@
 
 인텐트로 넘긴 값을 받아오는게 과제였기때문에 startActivityForResult를 사용해줬다.
 
-startActivityForResult
+**startActivityForResult**
 
 startActivity는 단순히 다른 activity로 넘겨주는 메소드라면 startActivityForResult는 requestCode로 다양한 상황에서 사용할 수 있다. ex) RESULT_OK는 작업성공,RESULT_CANCELED는 작업 실패 
 
 로그인 액티비티에서 회원가입버튼을 누르면 회원가입 액티비티로 넘어가고 거기서 작성한 값을 받아오는거기 때문에, 로그인 액티비티의 회원가입이라는 글자에 이벤트 리스너를 등록하고 startActivityForResult(joinIntent,RequestCode)를 실행!
 
-Login.Activity.kt 
+**Login.Activity.kt** 
 
 (올린 파일에서는 MainActivity.kt이다ㅠ LoginActivity로 따로 뺐어야했는데 MainActivity에 그냥 작성해버렸다..ㅎ )
 
@@ -34,7 +34,7 @@ tv_join.setOnClickListener{
 
 그리고 onActivityrResult메소드를 오버라이드해서 작업이 잘 이뤄졌고(requestCode == Activity.RESULT_OK) , 결과로 받은 requestCode와 startActivityForResult로 넘겨준 RequestCode값이 일치한다면 넘겨받은 값을 아이디와 패스워드에 보여주면 된다.
 
-LoginActivity.kt
+**LoginActivity.kt**
 
 ~~~
 override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -57,7 +57,7 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
 
 회원가입 액티비티로 넘어가면 회원가입할때 사용했던 아이디와 패스워드 값을 putExtra("name",value)로 넘겨준다. 그리고 setResult()로 requestCode와 넘겨줄 값을 넣은 intent 를 써준다.
 
-JoinActivity.kt
+**JoinActivity.kt**
 
 
     et_join.setOnClickListener {
