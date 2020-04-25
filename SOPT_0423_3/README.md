@@ -5,6 +5,7 @@ SharedPreferences 사용해서 자동로그인 기능 구현하기
 먼저 LoginActivity 를 만들어준다.
 
 <img width="308" alt="스크린샷 2020-04-25 오후 4 14 17" src="https://user-images.githubusercontent.com/53978090/80274136-30bc5a00-8713-11ea-8cbc-3b34938c76fc.png">
+
 **Activity_login.xml**
 
 ~~~
@@ -106,6 +107,7 @@ SharedPreferences 사용해서 자동로그인 기능 구현하기
 여기서 회원가입 버튼을 누르면 회원가입 액티비티로 넘어간다
 
 <img width="308" alt="스크린샷 2020-04-25 오후 4 09 21" src="https://user-images.githubusercontent.com/53978090/80274141-37e36800-8713-11ea-9bf4-68ec77856837.png">
+
 **Activity_join.xml**
 
 ~~~
@@ -210,8 +212,7 @@ et_join.setOnClickListener {
 
 먼저 SharedPreferences Class를 생성해준다.
 
-** MySharedPreferences.kt**
-
+**MySharedPreferences.kt**
 ~~~
 package com.example.sopt_0423_3
 
