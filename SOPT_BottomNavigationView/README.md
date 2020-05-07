@@ -384,7 +384,7 @@ class MainActivity : AppCompatActivity() {
 }
 ~~~
 
-<img width="308" alt="image-20200507230417860" src="https://user-images.githubusercontent.com/53978090/81326687-2320b000-90d5-11ea-850f-c960219ccd39.png">
+<img width="310" alt="스크린샷 2020-05-08 오전 2 52 34" src="https://user-images.githubusercontent.com/53978090/81327953-0c7b5880-90d7-11ea-970c-e563fcdedaed.png">
 
 <img width="308" alt="image-20200507230433857" src="https://user-images.githubusercontent.com/53978090/81326690-23b94680-90d5-11ea-877c-4898e6edf9c1.png">
 
