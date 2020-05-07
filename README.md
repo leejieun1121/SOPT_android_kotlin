@@ -13,5 +13,6 @@ SOPT_0423_3 : 선택과제2 - 자동 로그인 기능 구현하기
 :cherry_blossom: **두번째 세미나 과제**
 
 SOPT_BottomNavigationView : 필수과제 1 - BottomNavigation, ViewPager, RecyclerView 이용하여 직접 실습해보기 
+
                             필수과제 2 - RecyclerView의 itemDecoration, clipToPadding 에 대해 공부하고 적용해보기
                             
