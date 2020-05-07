@@ -164,7 +164,7 @@ BottomNavigationView의 UI를 다 만들어 주고, 선택되면 각 화면이 �
 
 * Fragment
 
-  :
+  : 하나의 액티비티 안에서 여러 화면을 구성하기 위해 사용되는 
 
 HomeFragment, LibraryFragment, MyPageFragment를 생성해준다.(자동으로 xml파일도 생성된다)
 
@@ -301,8 +301,9 @@ class MyPageFragment : Fragment() {
 
 * Adapter 
 
-  : 
-
+  : 보여지는 뷰와 뷰에 나타낼 data를 연결해주는 중간다리 역할 !
+ 
+ 
 **MainpagerAdapter.kt**
 
 ~~~
@@ -393,7 +394,7 @@ class MainActivity : AppCompatActivity() {
 
 * RecyclerView 
 
-  : 
+  : 향상된 listview -> 뷰홀더, 어댑터, 데이터클래스, 리싸이클러뷰 필요
 
 먼저 반복되는 뷰의 아이템 레이아웃을 만들어 줍니당
 
