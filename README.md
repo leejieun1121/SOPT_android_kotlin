@@ -20,6 +20,6 @@ SOPT_BottomNavigationView
                             
 :cherry_blossom: **세번 세미나**
 
-Postman 실행해보기
+Postman.md : Postman 실행해보기
 
 SOPT_0518 : 3주차 세미나 따라해보기
