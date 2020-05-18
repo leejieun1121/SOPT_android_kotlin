@@ -13,11 +13,11 @@
 
 postman 을 실행시켜서
 
-<img width="748" alt="스크린샷 2020-05-18 오후 10 59 06" src="https://user-images.githubusercontent.com/53978090/82232902-300d9100-996a-11ea-9368-001bf0ce7ef9.png">
+<img width="748" alt="스크린샷 2020-05-18 오후 10 53 47" src="https://user-images.githubusercontent.com/53978090/82232821-12d8c280-996a-11ea-93a0-f6c4dfa9be4d.png">
 
 위의 login API에 나와있는 정보를 써준다. POST방식, baseurl, RequestHeader 
 
-<img width="748" alt="스크린샷 2020-05-18 오후 10 53 47" src="https://user-images.githubusercontent.com/53978090/82232821-12d8c280-996a-11ea-93a0-f6c4dfa9be4d.png">
+<img width="748" alt="스크린샷 2020-05-18 오후 10 59 06" src="https://user-images.githubusercontent.com/53978090/82232902-300d9100-996a-11ea-9368-001bf0ce7ef9.png">
 
 로그인으로 넘겨줄 값이 id와 password기 때문에, Body 부분에 고대로 써준다 ! 그리고 Send 를 해주면 밑에 응답이 뜬다. 
 
