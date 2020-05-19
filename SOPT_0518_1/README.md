@@ -152,10 +152,11 @@ class JoinActivity : AppCompatActivity() {
 
 응답 로그도 잘 나온다 !
 
-<img width="311" alt="스크린샷 2020-05-19 오후 2 54 30" src="https://user-images.githubusercontent.com/53978090/82332027-d9fb2500-9a1f-11ea-9c64-0a298501fde3.png">
+<img width="1364" alt="스크린샷 2020-05-19 오후 2 54 42" src="https://user-images.githubusercontent.com/53978090/82333046-2bf07a80-9a21-11ea-8106-55dd36609483.png">
 
 저번에 썼던 아이디와 비밀번호로도 로그인 완료!
 
-![스크린샷 2020-05-19 오후 2.54.30](/Users/oopsla/Desktop/스크린샷 2020-05-19 오후 2.54.30.png)
+<img width="311" alt="스크린샷 2020-05-19 오후 2 54 30" src="https://user-images.githubusercontent.com/53978090/82332027-d9fb2500-9a1f-11ea-9c64-0a298501fde3.png">
+
 
 ### r​e​t​ro​f​it​2​ ​써보기 끝 :clap: :clap:
