@@ -23,3 +23,5 @@ SOPT_BottomNavigationView
 Postman.md : Postman 실행해보기
 
 SOPT_0518 : 3주차 세미나 따라해보기
+
+SOPT_0518_1 : 필수과제 1 - 동일한 문서를 활용하여 회원가입 부분 통신하기
