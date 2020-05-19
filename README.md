@@ -18,7 +18,7 @@ SOPT_BottomNavigationView
 
 필수과제 2 : RecyclerView의 itemDecoration, clipToPadding 에 대해 공부하고 적용해보기
                             
-:cherry_blossom: **세번 세미나**
+:cherry_blossom: **세번째 세미나**
 
 Postman.md : Postman 실행해보기
 
