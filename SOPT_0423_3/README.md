@@ -1,4 +1,4 @@
-첫째주 세미나 과제#4 :books:
+### 첫째주 세미나 과제#4 :books:
 
 SharedPreferences 사용해서 자동로그인 기능 구현하기
 
