@@ -144,20 +144,19 @@ class JoinActivity : AppCompatActivity() {
 
 방금 만든 아이디와 패스워드로 로그인버튼을 누르면
 
-<img width="311" alt="스크린샷 2020-05-19 오전 1 33 11" src="https://user-images.githubusercontent.com/53978090/82332015-d5cf0780-9a1f-11ea-8ac6-849b837e7dce.png">
+<img width="311" alt="스크린샷 2020-05-19 오후 2 54 30" src="https://user-images.githubusercontent.com/53978090/82332007-d23b8080-9a1f-11ea-9a8d-0ef0d1d0d5b0.png">
 
 잘 성공한다 ㅎㅎ
 
-<img width="311" alt="스크린샷 2020-05-19 오후 2 54 30" src="https://user-images.githubusercontent.com/53978090/82332007-d23b8080-9a1f-11ea-9a8d-0ef0d1d0d5b0.png">
-
+<img width="1364" alt="스크린샷 2020-05-19 오후 2 54 42" src="https://user-images.githubusercontent.com/53978090/82333046-2bf07a80-9a21-11ea-8106-55dd36609483.png">
 
 응답 로그도 잘 나온다 !
 
-<img width="1364" alt="스크린샷 2020-05-19 오후 2 54 42" src="https://user-images.githubusercontent.com/53978090/82333046-2bf07a80-9a21-11ea-8106-55dd36609483.png">
-
-저번에 썼던 아이디와 비밀번호로도 로그인 완료!
+<img width="311" alt="스크린샷 2020-05-19 오전 1 33 11" src="https://user-images.githubusercontent.com/53978090/82332015-d5cf0780-9a1f-11ea-8ac6-849b837e7dce.png">
 
 <img width="311" alt="스크린샷 2020-05-19 오후 2 54 30" src="https://user-images.githubusercontent.com/53978090/82332027-d9fb2500-9a1f-11ea-9c64-0a298501fde3.png">
+
+저번에 썼던 아이디와 비밀번호로도 로그인 완료!
 
 
 ### r​e​t​ro​f​it​2​ ​써보기 끝 :clap: :clap:
