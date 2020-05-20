@@ -1,4 +1,4 @@
-package com.example.sopt_0518
+package com.example.sopt_0518.activity
 
 import android.app.Activity
 import android.content.Intent
@@ -48,6 +48,12 @@ class JoinActivity : AppCompatActivity() {
                         if(response.isSuccessful){
                             if(response.body()!!.success) {
                                 Toast.makeText(this@JoinActivity,"회원가입 성공",Toast.LENGTH_SHORT).show()
+                                val loginIntent = Intent()
+                                loginIntent.putExtra("user_id", et_id.text.toString())
+                                loginIntent.putExtra("user_pw", et_pw.text.toString())
+                                //Log.d("join id",id)
+                                //Log.d("join pw",pw)
+                                setResult(Activity.RESULT_OK,loginIntent)
                                 finish()
 
                             }else{

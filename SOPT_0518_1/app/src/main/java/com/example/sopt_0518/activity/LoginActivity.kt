@@ -1,10 +1,14 @@
-package com.example.sopt_0518
+package com.example.sopt_0518.activity
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.sopt_0518.data.App
+import com.example.sopt_0518.R
 import com.example.sopt_0518.data.RequestLogin
 import com.example.sopt_0518.data.ResponseLogin
 import com.example.sopt_0518.network.RequestToServer
@@ -20,6 +24,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        et_id.text = Editable.Factory.getInstance().newEditable(App.users.myid)
+        et_pw.text = Editable.Factory.getInstance().newEditable(App.users.mypw)
 
         btn_login.setOnClickListener{
             if(et_id.text.isNullOrBlank() || et_pw.text.isNullOrBlank()){
@@ -44,9 +50,9 @@ class LoginActivity : AppCompatActivity() {
                             if(response.body()!!.success){
                                 Log.d("response_body",response.body().toString())
                                 Toast.makeText(this@LoginActivity,"로그인 성공",Toast.LENGTH_SHORT).show()
-                                val intent = Intent(this@LoginActivity,MainActivity::class.java)
+                                val intent = Intent(this@LoginActivity,
+                                    MainActivity::class.java)
                                 startActivity(intent)
-                                finish()
                             }else{
                                 Log.d("response_body",response.body().toString())
                                 Toast.makeText(this@LoginActivity,"아이디 비밀번호를 확인하세요",Toast.LENGTH_SHORT).show()
@@ -60,9 +66,32 @@ class LoginActivity : AppCompatActivity() {
         }
 
         tv_join.setOnClickListener{
-            val intent = Intent(this, JoinActivity::class.java)
-            startActivity(intent)
+            val joinIntent = Intent(this,
+                JoinActivity::class.java)
+            startActivityForResult(joinIntent, 100)
         }
 
+    }
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(resultCode == Activity.RESULT_OK)
+        {
+            when(requestCode){
+                100 ->{
+                    val id = data!!.getStringExtra("user_id").toString()
+                    //et_id.text = Editable.Factory.getInstance().newEditable(id)
+                    App.users.myid = id
+                    et_id.text = Editable.Factory.getInstance().newEditable(App.users.myid)
+                    Log.e("id들어오는거 체크",
+                        App.users.myid)
+                    val pw = data!!.getStringExtra("user_pw").toString()
+                    App.users.mypw = pw
+                    et_pw.text = Editable.Factory.getInstance().newEditable(App.users.mypw)
+                    Log.e("pw들어오는거 체크",
+                        App.users.mypw)
+
+                }
+            }
+        }
     }
 }
