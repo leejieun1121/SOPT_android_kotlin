@@ -1,4 +1,4 @@
-![스크린샷 2020-06-12 오후 9.06.59](/Users/oopsla/Desktop/스크린샷 2020-06-12 오후 9.06.59.png)
+<img width="311" alt="스크린샷 2020-06-12 오후 9 06 59" src="https://user-images.githubusercontent.com/53978090/84501400-6df3a000-acf1-11ea-8ffb-6d190297e3cb.png">
 
 BottomNavigationView와 RecyclerView를 이용해서 만든 웹툰페이지입니다!
 
