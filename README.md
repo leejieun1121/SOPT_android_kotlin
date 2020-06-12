@@ -17,6 +17,10 @@ SOPT_BottomNavigationView
 필수과제 1 : BottomNavigation, ViewPager, RecyclerView 이용하여 직접 실습해보기 
 
 필수과제 2 : RecyclerView의 itemDecoration, clipToPadding 에 대해 공부하고 적용해보기
+
+Webtoonproject 
+
+성장과제 : 웹툰뷰 만들어보기
                             
 :cherry_blossom: **세번째 세미나**
 
