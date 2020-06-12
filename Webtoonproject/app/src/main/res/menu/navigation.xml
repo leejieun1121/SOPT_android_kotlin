@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item android:id="@+id/menu_webtoon"
+        android:icon="@drawable/calender"
+         />
+
+    <item android:id="@+id/menu_recommand"
+        android:icon="@drawable/recommand"
+    />
+
+    <item android:id="@+id/menu_best"
+        android:icon="@drawable/star"
+      />
+
+    <item android:id="@+id/menu_mine"
+        android:icon="@drawable/mine"
+       />
+
+    <item android:id="@+id/menu_more"
+        android:icon="@drawable/more"
+      />
+
+</menu>
