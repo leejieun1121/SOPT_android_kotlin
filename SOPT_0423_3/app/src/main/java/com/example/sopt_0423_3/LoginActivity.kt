@@ -23,15 +23,22 @@ class LoginActivity : AppCompatActivity() {
             val joinIntent = Intent(this,JoinActivity::class.java)
             startActivityForResult(joinIntent, 100)
         }
+        et_id.textChangedListener { s->
+            if(s.isNullOrBlank()){
+                showToast("아이디가 빈칸이네요")
+            }
+        }
         btn_login.setOnClickListener{
             if(et_id.text.toString()=="lje4648@naver.com" && et_pw.text.toString()=="1121"){
                 val intent = Intent(this,MainActivity::class.java)
                 startActivity(intent)
             }else{
-                Toast.makeText(this@LoginActivity,"아이디와 패스워드가 일치하지 않습니다.",Toast.LENGTH_LONG).show()
+                showToast("아이디와 패스워드가 일치하지 않습니다.")
+                //Toast.makeText(this@LoginActivity,"아이디와 패스워드가 일치하지 않습니다.",Toast.LENGTH_LONG).show()
             }
             if(et_id.text == null || et_pw.text ==null)
-                Toast.makeText(this@LoginActivity,"아이디와 패스워드 모두 입력해주세요.",Toast.LENGTH_LONG).show()
+                showToast("아이디와 패스워드가 모두 입력해주세.")
+            // Toast.makeText(this@LoginActivity,"아이디와 패스워드 모두 입력해주세요.",Toast.LENGTH_LONG).show()
 
         }
     }

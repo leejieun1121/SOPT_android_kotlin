@@ -6,15 +6,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_home"
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_home"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingHorizontal="10dp"-->
+<!--        android:paddingVertical="30dp"-->
+<!--        android:clipToPadding="false"-->
+<!--        app:layoutManager = "androidx.recyclerview.widget.GridLayoutManager"-->
+<!--        tools:listitem="@layout/item_insta"/>-->
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="30dp"
-        android:clipToPadding="false"
-        app:layoutManager = "androidx.recyclerview.widget.GridLayoutManager"
-        tools:listitem="@layout/item_insta"/>
+        android:layout_height="match_parent"
+        android:text="홈 화면 입니다." />
 
 
 </FrameLayout>

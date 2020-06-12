@@ -20,13 +20,13 @@ class HomeFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        instaAdapter = InstaAdapter(view.context)
-        rv_home.adapter = instaAdapter
-        //rv_home.addItemDecoration(InstaItemDecoration(view.context))
-        loadDatas()
-    }
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+////        super.onViewCreated(view, savedInstanceState)
+////        instaAdapter = InstaAdapter(view.context)
+////        rv_home.adapter = instaAdapter
+////        //rv_home.addItemDecoration(InstaItemDecoration(view.context))
+////        loadDatas()
+////    }
 
     private fun loadDatas(){
         datas.apply {
